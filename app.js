@@ -19,6 +19,6 @@ connectDB();
 // index Routes
 app.use("/", require("./routers/index"));
 
-app.listen(process.env.PORT | 3000, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("Server is up and running");
 });
